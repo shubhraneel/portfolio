@@ -464,6 +464,7 @@ body {
 .interests-page .content {
     width: 110rem;
     padding: 10rem;
+    margin: auto;
 }
 
 
@@ -528,21 +529,26 @@ body {
         font-size: 2rem;
     }
 
-}
-@media (max-width: 950px) {
+
     .column {
         width: 100%;
         float: none;
         padding-bottom: 1rem;
     }
     .interest {
+        width: 40rem;
         clip-path: none;
         height: auto;
+        margin: auto;
     }
     .interests-page .content {
         text-align: center;
         width: 100%;
         padding: 5rem 0;
+    }
+
+    .interest__desc {
+        font-size: 1.7rem;
     }
 }
 @media (max-width: 900px) {
