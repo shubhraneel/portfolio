@@ -65,19 +65,22 @@ body {
 .navigation__button--mobile:visited {
     display: block;
     text-decoration: none;
-    color: #3a3a3a;
     padding: 2rem;
     font-size: 3rem;
     border-radius: 10px;
     margin: 1rem;
     margin-right: 3rem;
-    background-color: #c893bd;
     transition: all 0.2s;
+    background-color: transparent;
+          color: white;
+          border-width: 2px;
+          border-style: solid;
+          border-color: white;
 }
 
 .navigation__button--mobile:active {
-    background-color: #c226b5;
-    color: white;
+    background-color: white;
+          color: black;
 }
 
 .navigation__checkbox {
@@ -194,8 +197,13 @@ body {
     width: 75vw;
     height: 100vh;
     transform: translateX(100vw);
-    background-image: linear-gradient(to bottom, #9c9c9c 0%, #9c9c9c 7rem, white 7rem, white 80%, #fb1f61);
-    padding: 1rem;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(25, 25, 25) 0,
+        rgb(25, 25, 25) 80%,
+        rgb(35, 35, 35) 80%
+      );
+          padding: 1rem;
     padding-top: 7.5rem;
     visibility: hidden;
     opacity: 1;
@@ -519,6 +527,34 @@ body {
     color: white;
 }
 
+.contacts-page {
+    background-image: radial-gradient(rgb(0, 119, 255), purple);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    padding: 3rem;
+}
+.contacts-page .content {
+    margin-top: 3rem;
+}
+.contact {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 2rem 3rem;
+}
+.icon {
+    font-size: 20rem;
+}
+.facebook {
+    color: blue;
+}
+.github {
+    color: rgb(26, 26, 26);
+}
+.instagram {
+    color: rgb(255, 0, 128);
+}
 @media (max-width: 1200px) {
 
     html {
