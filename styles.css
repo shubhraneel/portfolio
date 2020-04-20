@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -23,8 +22,6 @@ body {
     z-index: 1000;
 }
 
-
-
 .navigation__button,
 .navigation__button:link,
 .navigation__button:visited {
@@ -33,7 +30,12 @@ body {
     margin: 1rem 2rem;
     padding: 0.6rem 0.7rem;
     color: white;
-    background-image: linear-gradient(to top, white 0%, white 50%, transparent 50%);
+    background-image: linear-gradient(
+        to top,
+        white 0%,
+        white 50%,
+        transparent 50%
+    );
     background-size: 100% 200%;
     background-position: top;
     transition: all 0.4s ease-in-out;
@@ -41,7 +43,6 @@ body {
 }
 
 @media (max-width: 899px) {
-
     .navigation__button,
     .navigation__button:link,
     .navigation__button:visited {
@@ -52,8 +53,6 @@ body {
 .navigation__button.navigation__button--covid {
     background-color: rgba(255, 0, 85, 0.5);
 }
-
-
 
 .navigation__button:hover {
     background-position: bottom;
@@ -72,15 +71,15 @@ body {
     margin-right: 3rem;
     transition: all 0.2s;
     background-color: transparent;
-          color: white;
-          border-width: 2px;
-          border-style: solid;
-          border-color: white;
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
 }
 
 .navigation__button--mobile:active {
     background-color: white;
-          color: black;
+    color: black;
 }
 
 .navigation__checkbox {
@@ -145,39 +144,53 @@ body {
     top: 1rem;
 }
 
-.navigation__checkbox:checked+.navigation__toggler {
+.navigation__checkbox:checked + .navigation__toggler {
     background-color: transparent;
     box-shadow: none;
 }
 
-.navigation__checkbox:checked+.navigation__toggler .navigation__burger {
+.navigation__checkbox:checked + .navigation__toggler .navigation__burger {
     background-color: transparent;
 }
 
-.navigation__checkbox:checked+.navigation__toggler .navigation__burger,
-.navigation__checkbox:checked+.navigation__toggler .navigation__burger:after,
-.navigation__checkbox:checked+.navigation__toggler .navigation__burger:before {
+.navigation__checkbox:checked + .navigation__toggler .navigation__burger,
+.navigation__checkbox:checked + .navigation__toggler .navigation__burger:after,
+.navigation__checkbox:checked
+    + .navigation__toggler
+    .navigation__burger:before {
     box-shadow: none;
     color: #353535;
 }
 
-.navigation__checkbox:checked+.navigation__toggler .navigation__burger:active,
-.navigation__checkbox:checked+.navigation__toggler .navigation__burger:after:active,
-.navigation__checkbox:checked+.navigation__toggler .navigation__burger:before:active {
+.navigation__checkbox:checked + .navigation__toggler .navigation__burger:active,
+.navigation__checkbox:checked
+    + .navigation__toggler
+    .navigation__burger:after:active,
+.navigation__checkbox:checked
+    + .navigation__toggler
+    .navigation__burger:before:active {
     color: #969696;
 }
 
-.navigation__checkbox:checked+.navigation__toggler .navigation__burger:after {
+.navigation__checkbox:checked + .navigation__toggler .navigation__burger:after {
     transform: translateY(-1rem) rotate(-45deg);
 }
 
-.navigation__checkbox:checked+.navigation__toggler .navigation__burger:before {
+.navigation__checkbox:checked
+    + .navigation__toggler
+    .navigation__burger:before {
     transform: translateY(1rem) rotate(45deg);
 }
 
-.navigation__checkbox:checked~.navigation__menu .navigation__button--mobile.navigation__button--covid,
-.navigation__checkbox:checked~.navigation__menu .navigation__button--mobile.navigation__button--covid:link,
-.navigation__checkbox:checked~.navigation__menu .navigation__button--mobile.navigation__button--covid:visited {
+.navigation__checkbox:checked
+    ~ .navigation__menu
+    .navigation__button--mobile.navigation__button--covid,
+.navigation__checkbox:checked
+    ~ .navigation__menu
+    .navigation__button--mobile.navigation__button--covid:link,
+.navigation__checkbox:checked
+    ~ .navigation__menu
+    .navigation__button--mobile.navigation__button--covid:visited {
     animation-play-state: running !important;
 }
 
@@ -202,27 +215,37 @@ body {
         rgb(25, 25, 25) 0,
         rgb(25, 25, 25) 80%,
         rgb(35, 35, 35) 80%
-      );
-          padding: 1rem;
+    );
+    padding: 1rem;
     padding-top: 7.5rem;
     visibility: hidden;
     opacity: 1;
     transition: all 0.4s;
 }
 
-.navigation__checkbox:checked~.navigation__menu {
+.navigation__checkbox:checked ~ .navigation__menu {
     visibility: visible;
     opacity: 1;
 }
 
-.navigation__checkbox:checked~.navigation__menu .navigation__list {
+.navigation__checkbox:checked ~ .navigation__menu .navigation__list {
     visibility: visible;
     transform: translateX(25vw);
 }
 
-
 .intro .background {
-    background-image: linear-gradient(120deg, transparent 0, transparent 50.2%, rgba(66, 56, 100, 0.5) 50.2%), linear-gradient(to right top, rgba(32, 32, 64, 0.5), rgb(84, 56, 100, 0.5)), url(images/sunset.jpg);
+    background-image: linear-gradient(
+            120deg,
+            transparent 0,
+            transparent 50.2%,
+            rgba(66, 56, 100, 0.5) 50.2%
+        ),
+        linear-gradient(
+            to right top,
+            rgba(32, 32, 64, 0.5),
+            rgb(84, 56, 100, 0.5)
+        ),
+        url(images/sunset.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -239,7 +262,7 @@ body {
     width: 50%;
     height: 20rem;
     box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.7);
-    transition: all .6s ease-in;
+    transition: all 0.6s ease-in;
 }
 
 .primary-heading:hover,
@@ -259,8 +282,8 @@ body {
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%) skewX(-30deg);
-    animation: zoom-out .8s ease-in;
-    transition: all .6s ease-in;
+    animation: zoom-out 0.8s ease-in;
+    transition: all 0.6s ease-in;
 }
 
 .primary-heading:hover .primary-heading__name,
@@ -279,7 +302,7 @@ body {
     width: 50%;
     height: 20rem;
     box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.7);
-    transition: all .6s ease-in;
+    transition: all 0.6s ease-in;
 }
 
 .secondary-heading:hover,
@@ -301,8 +324,8 @@ body {
     padding: 0 3rem;
     line-height: 1.5;
     transform: translate(-50%, -50%) skewX(30deg);
-    animation: zoom-in .8s ease-in;
-    transition: all .6s ease-in;
+    animation: zoom-in 0.8s ease-in;
+    transition: all 0.6s ease-in;
 }
 
 .secondary-heading:hover .secondary-heading__intro,
@@ -328,7 +351,7 @@ body {
     border-width: 0.5rem;
     border-color: white;
     box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.7);
-    transition: all .4s ease-in;
+    transition: all 0.4s ease-in;
 }
 
 .intro-image__image:hover {
@@ -368,16 +391,23 @@ body {
 
 .achievement-page {
     padding: 3rem;
-    background-image: linear-gradient(to right, rgba(32, 32, 64, 0.6) 0%, rgba(84, 56, 100, 0.2) 30%, rgba(84, 56, 100, 0.2) 70%, rgba(32, 32, 64, 0.6) 100%), url(images/success.jpg);
+    background-image: linear-gradient(
+            to right,
+            rgba(32, 32, 64, 0.6) 0%,
+            rgba(84, 56, 100, 0.2) 30%,
+            rgba(84, 56, 100, 0.2) 70%,
+            rgba(32, 32, 64, 0.6) 100%
+        ),
+        url(images/success.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
 .heading {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     font-size: 3rem;
-    color: #f8e1f4;;
+    color: #f8e1f4;
     text-align: left;
 }
 
@@ -388,11 +418,11 @@ body {
     transform: translate(-50%, -50%);
     width: 90%;
     height: 90%;
-    animation: zoom-in-only 1s cubic-bezier(.15,-0.36,.77,1.67);
+    animation: zoom-in-only 1s cubic-bezier(0.15, -0.36, 0.77, 1.67);
     backface-visibility: hidden;
 }
 
-@keyframes zoom-in-only{
+@keyframes zoom-in-only {
     from {
         transform: translate(-50%, -50%) scale(1.2);
     }
@@ -410,10 +440,11 @@ body {
     font-size: 3rem;
     font-family: "Ubuntu", sans-serif;
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-    transition: all .4s;
+    transition: all 0.4s;
 }
 
-.achievement:hover, .achievement:active {
+.achievement:hover,
+.achievement:active {
     transform: translate(-50%, -50%) scale(1.1);
     background-color: #ff6363;
     color: white;
@@ -436,34 +467,69 @@ body {
 }
 
 .achievement--1 {
-    
-    top:30%;
-    left:30%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);    
+    top: 30%;
+    left: 30%;
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 75%,
+        75% 75%,
+        75% 100%,
+        50% 75%,
+        0% 75%
+    );
 }
 
 .achievement--2 {
-    
-    top:70%;
-    left:30%;
-    clip-path: polygon(0 100%, 100% 100%, 100% 25%, 75% 25%, 75% 0, 50% 25%, 0 25%);
+    top: 70%;
+    left: 30%;
+    clip-path: polygon(
+        0 100%,
+        100% 100%,
+        100% 25%,
+        75% 25%,
+        75% 0,
+        50% 25%,
+        0 25%
+    );
 }
 
 .achievement--3 {
-    
-    top:30%;
-    left:70%;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 25% 75%, 25% 100%, 50% 75%, 0 75%);
+    top: 30%;
+    left: 70%;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 75%,
+        25% 75%,
+        25% 100%,
+        50% 75%,
+        0 75%
+    );
 }
 
 .achievement--4 {
-    
-    top:70%;
-    left:70%;
-    clip-path: polygon(0 100%, 100% 100%, 100% 25%, 25% 25%, 25% 0, 50% 25%, 0 25%);
+    top: 70%;
+    left: 70%;
+    clip-path: polygon(
+        0 100%,
+        100% 100%,
+        100% 25%,
+        25% 25%,
+        25% 0,
+        50% 25%,
+        0 25%
+    );
 }
 .interests-page {
-    background-image: linear-gradient(to right, rgba(255, 189, 105, 0.2) 0%, rgba(255, 99, 99, 0.4) 30%, rgba(255, 99, 99, 0.4) 70%, rgba(255, 189, 105, 0.2) 100%), url(images/coding.jpg);
+    background-image: linear-gradient(
+            to right,
+            rgba(255, 189, 105, 0.2) 0%,
+            rgba(255, 99, 99, 0.4) 30%,
+            rgba(255, 99, 99, 0.4) 70%,
+            rgba(255, 189, 105, 0.2) 100%
+        ),
+        url(images/coding.jpg);
     background-size: cover;
     background-position: top;
     height: 100vh;
@@ -475,7 +541,6 @@ body {
     margin: auto;
 }
 
-
 .column {
     width: 33.33333%;
     padding: 5rem;
@@ -484,38 +549,41 @@ body {
 }
 .interest {
     background-image: linear-gradient(
-    to top right,
-    rgb(32, 32, 64) 0%,
-    rgb(32, 32, 64) 25%,
-    rgba(84, 56, 100, 0.8) 25%,
-    rgba(84, 56, 100, 0.8) 50%,
-    rgb(32, 32, 64) 50%
-  );
-  background-size: 200% 200%;
-  background-position: bottom left;
-      clip-path: polygon(0 15%, 50% 0, 100% 15%, 100% 100%, 0 100%);
+        to top right,
+        rgb(32, 32, 64) 0%,
+        rgb(32, 32, 64) 25%,
+        rgba(84, 56, 100, 0.8) 25%,
+        rgba(84, 56, 100, 0.8) 50%,
+        rgb(32, 32, 64) 50%
+    );
+    background-size: 200% 200%;
+    background-position: bottom left;
+    clip-path: polygon(0 15%, 50% 0, 100% 15%, 100% 100%, 0 100%);
     height: 35rem;
-    padding: 5rem 3rem;
+    padding: 2.5rem 3rem;
     border-radius: 20px;
-    transition: all .6s ease;
+    transition: all 0.6s ease;
 }
 
 .interest:hover {
     transform: scale(1.2) translateY(-2rem);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.603);
     background-image: linear-gradient(
-      to top right,
-      rgb(32, 32, 64) 0%,
-      rgb(32, 32, 64) 25%,
-      rgb(181, 88, 243) 25%,
-      rgb(181, 88, 243) 50%,
-      rgb(32, 32, 64) 50%
+        to top right,
+        rgb(32, 32, 64) 0%,
+        rgb(32, 32, 64) 25%,
+        rgb(181, 88, 243) 25%,
+        rgb(181, 88, 243) 50%,
+        rgb(32, 32, 64) 50%
     );
     background-position: 50%;
 }
-
+.interest__icon {
+    color: lightgrey;
+    margin-bottom: 1rem;
+}
 .interest__head {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 2.5rem;
     height: 6rem;
     margin-bottom: 2rem;
@@ -556,7 +624,6 @@ body {
     color: rgb(255, 0, 128);
 }
 @media (max-width: 1200px) {
-
     html {
         font-size: 55%;
     }
@@ -564,7 +631,6 @@ body {
     .secondary-heading__intro {
         font-size: 2rem;
     }
-
 
     .column {
         width: 100%;
