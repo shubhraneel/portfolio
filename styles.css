@@ -610,6 +610,12 @@ body {
     border-radius: 10px;
     display: inline-block;
     padding: 2rem 3rem;
+    transition: all .6s ease;
+}
+.contact:hover,
+.contact:active {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 10px white;
 }
 .icon {
     font-size: 20rem;
